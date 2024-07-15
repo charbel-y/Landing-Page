@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Margarine&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root{
+    --headingColor : ;
+    --headingFamily :  "Margarine", sans-serif;
+    --paragraphColor : ;
+    --paragraphFamily : "Roboto Mono", monospace;
+}
+
+html body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    max-width: 100%;
+    animation-name: loadAnimation;
+    animation-duration: 1.5s;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    z-index: 9999999;
+}
+ h1{
+     
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 5em;
+    padding-top: 20px;
+}
+.container ul li{
+    list-style-type: none;
+    font-size: 1.1em;
+}
+.container ul li a{
+    text-decoration: none;
+    font-family: serif;
+    color: black;
+    transition: all 1s ease;
+}
+.container ul li a:hover{
+    
+    color: crimson;
+}
+button{
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 1s ease;
+    border: 2px solid grey;
+    font-weight: 550;
+    
+}
+button:hover{
+  background-color: transparent !important;
+  color: crimson !important;
+  border: 2px solid transparent !important;
+}
+@media (max-width: 786px)
+{
+    ul{
+        display: none;
+    }
+}
+
+#about-us{
+    
+    padding: 13%;
+    background: url(/assets/dd7600f0146bba96b86b8fb5a143758e.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap:5%;
+    overflow: hidden;
+    height: fit-content;
+}
+
+ .grid h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+ }
+.grid p{
+    font-family: var(--paragraphFamily);
+    color: var(--paragraphColor);
+    font-size: 1em;
+    /*font-weight: 500;*/
+}
+@media (min-width: 530px) and (max-width: 1091px)
+{
+    .responsiveClassforImg{
+      
+        display: none;
+    }
+}
+@media (max-width: 514px)
+{
+    .responsiveClassforImg{
+        width: 100%;
+    }
+}
+
+#continue{
+    
+    padding: 5%;
+    background-color: whitesmoke;
+    /*overflow: hidden;*/
+    height: auto-fit;
+}
+
+
+@media (max-width : 847px)
+{
+    #continue{
+        height: 99vh;
+    }
+}
+
+
+@media (max-width : 495px)
+{
+    #continue{
+        height: 130vh;
+    }
+}
+@media (max-width : 390px)
+{
+    #continue{
+        height: 150vh;
+    }
+}
+
+/*
+@media(min-width:682) and (max-width: 836){
+ #continue{
+    height: 150vh;
+ }
+}
+@media(min-width: 523px) and (max-width: 680px)
+{
+    #continue{
+        height: 130vh;
+    }
+}
+@media(min-width: 350px) and (max-width: 529px)
+{
+   #continue{
+    height: 150vh;
+   }
+   
+   
+}
+@media(min-width: 200px) and (max-width: 350px)
+{
+   #continue{
+    height: 200vh;
+   }
+}*/
+.box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10%;
+
+}
+.box .grid{
+   border: 1px solid rgb(71, 47, 52);
+   padding: 10%;
+   border-radius: 5px;
+}
+#contact{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    overflow: hidden;
+    background: url(/assets/6f32e8b47c155ad6a1c7f6af4be824ac.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    
+}
+.contactcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 25em;
+    padding: 4%;
+    background-color: rgba(245, 245, 245, 0.764);
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.contactcontainer label{
+    font-weight: bold;
+    
+}
+.contactcontainer input{
+   height: 2em;
+   background-color: transparent;
+   border: 0.5px solid  gray;
+}
+.contactcontainer textarea{
+    height: 7em;
+    background-color: transparent;
+}
+.contactcontainer button{
+    background-color: transparent;
+    border: 0.5px solid gray;
+}
+.end{
+  
+}
+.containere{
+    
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   flex-direction: column;
+   background-color: lightgray;
+}
+.gogo {
+    
+    margin-top: 2%;
+}
+@keyframes loadAnimation{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
